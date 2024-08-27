@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black; 
+}
+
+body{
+    background: black url(../imagens/fundo-madeira.jpg) center center/cover no-repeat fixed
+}
+
+main{
+    position: relative;
+    height: 100vh;
+}
+
+#celular{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png) no-repeat
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 266px;
+    height: 471px;
+}
+
+section#redes-sociais{
+    text-align: right;
+}
+
+section#redes-sociais img{
+    width: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box;     /*ao criar a borda branca para sinalizar o hover, este  atributo faz com que a borda seja criada para dentro do ícone, em vez de para fora tirando os vizinhos do lugar*/
+}
+
+section#redes-sociais img:hover{
+    border: 3px solid rgb(255, 255, 255);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 10px black;
+    transition: transform .5s, border .5s;
+}
+
